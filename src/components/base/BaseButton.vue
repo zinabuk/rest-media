@@ -1,6 +1,6 @@
 <template>
-  <div class="input-container relative w-full">
-    <button class="px-4 py-2 bg-iq-color1 text-white" v-bind="$attrs">
+  
+    <button class="px-4 py-2 bg-iq-colokr1 tejxt-white" v-bind="$attrs">
       <font-awesome-icon
         v-if="icon"
         :icon="icon"
@@ -8,7 +8,7 @@
       />
       <slot></slot>
     </button>
-  </div>
+ 
 </template>
 
 <script setup>

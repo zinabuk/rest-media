@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+import BaseInput from '@/components/base/BaseInput.vue'
+import BaseButton from '@/components/base/BaseButton.vue'
+</script>
 
 <template>
   <main class="w-full grid grid-cols-12 relative min-h-[calc(100vh_-_80px)] gap-w4">
@@ -7,7 +10,9 @@
       class="logo h-full col-span-7 object-cover w-full"
       src="@/assets/hero.jpg"
     />
-    <div class="w-full h-full flex flex-col justify-center gap-4 col-span-5 p-8 bg-[#539000] text-white">
+    <div
+      class="w-full h-full flex flex-col justify-center gap-4 col-span-5 p-8 bg-[#539000] text-white"
+    >
       <h6 class="font-bold text-gray-100">Serving the needy</h6>
       <p class="text-4xl font-bold">Finncial, Agricultural, Health, Education and more Support</p>
       <div class="flex gap-4 p-4">
@@ -16,37 +21,47 @@
           to="/donate"
           >DONATE NOW</router-link
         >
-         
       </div>
     </div>
   </main>
 
-  <section class="px-[1%] md:px-[10%]  py-4 md:py-12 gap-2 flex justify-between items-center">
-    <div class="flex flex-col text-4xl"><span>30+</span> <span> Years of work</span></div>
-    <div class="text-4xl flex flex-col"><span> 8+ </span> <span>Services</span></div>
-    <div class="p-8 text-4xl flex flex-col"><span>20,000+</span> <span> people served</span></div>
-  </section>
-<!-- 
-  <section class="w-full px-[6%] grid grid-cols-2 gap-4 py-8">
-    <img src="@/assets/2.jpg" alt="" class="w-full max-h-[500px] object-cover" />
-    <div class="flex flex-col gap-2 py-8">
-      <h6 class="text-gray-400">Serving with clarity</h6>
-      <h1 class="text-6xl font-light">Through the ... process</h1>
-      <p>
-        Rest is a highly acclaimed non-profit organization dedicated to supporting the Tigrai
-        community in overcoming the broad range of conditions related to hunger, education and
-        finance.
-      </p>
-      <br />
-      <p>
-        Ensuring no individual is ever left alone to navigate the complex journey, we provide a
-        comprehensive resource of vetted professionals, referred according to your individual needs,
-        while compassionately serving you along the process.
-      </p>
+  <section
+    class="px-[1%] md:px-[8%] py-4 md:py-12 gap-2 flex justify-between items-center bg-gray-50"
+  >
+    <div class="flex flex-col text-4xl items-center justify-center">
+      <span class="font-bold">30+</span> <span> Years of work</span>
+    </div>
+    <div class="text-4xl flex flex-col items-center justify-center">
+      <span class="font-bold"> 8+ </span> <span>Services</span>
+    </div>
+    <div class="p-8 text-4xl flex flex-col items-center justify-center">
+      <span class="font-bold">20,000+</span> <span> people served</span>
     </div>
   </section>
 
-   -->
+  <section class="w-full px-[1%] md:px-[8%] py-8">
+    <!-- <img src="@/assets/2.jpg" alt="" class="w-full max-h-[500px] object-cover" /> -->
+    <div class=" py-8 w-full grid grid-cols-12 bg-[#579000] gap-2 text-white">
+      <h6 class=" text-3xl font-bold text-center col-span-1 flex items-center justify-center">JOIN US</h6>
+
+      <div class="w-full col-span-7">
+        <p class="font-bold">
+          We’ll send you conservation news and updates on how you can protect nature through
+          activism, donating, events, and more. You can unsubscribe at any time.
+        </p>
+        <div class="w-full">
+        <form @submit.prevent="subscribe" class="flex w-3/4 gap-4  justify-start">
+          
+          <BaseInput placeholder="Enter your email" inputClass="bg-white text-black" required type="email"></BaseInput>
+          <BaseButton label="" class="text-center font-bold bg-[#579000] border-2 border-white text-white  ">Subscribe</BaseButton>
+        </form>
+      </div>
+      </div>
+      <div class="flex col-span-4 items-center justify-center gap-4">
+        <font-awesome-icon icon="[fab, fa-facebook]" class="text-white"></font-awesome-icon>
+  <h2>youtube</h2> <h2>Facebook</h2> <h2>Telegram</h2>  <h2>Twitter</h2>  </div>
+    </div>
+  </section>
 
   <section class="w-full py-8 px-4">
     <h1 class="text-2xl font-semibold py-2">Partiners</h1>
@@ -88,4 +103,3 @@
     </div>
   </sections>
 </template>
-
