@@ -1,30 +1,32 @@
 <script setup></script>
 
 <template>
-  <main class="w-full grid grid-cols-12 relative min-h-[calc(100vh_-_80px)] gap-4">
+  <main class="w-full grid grid-cols-12 relative min-h-[calc(100vh_-_80px)] gap-w4">
     <img
       alt="Vue logo"
       class="logo h-full col-span-7 object-cover w-full"
       src="@/assets/hero.jpg"
     />
-    <div class="w-full h-full flex flex-col justify-center gap-4 col-span-5">
-      <h6 class="font-bold text-gray-400">Serving the needy</h6>
-      <p class="text-6xl font-light">Financial, Agricultural, Health, Education and more Support</p>
+    <div class="w-full h-full flex flex-col justify-center gap-4 col-span-5 p-8 bg-[#539000] text-white">
+      <h6 class="font-bold text-gray-100">Serving the needy</h6>
+      <p class="text-4xl font-bold">Finncial, Agricultural, Health, Education and more Support</p>
       <div class="flex gap-4 p-4">
         <router-link
-          class="bg-yellow-400 text-lg font-bo text-white rounded px-6 py-3 self-start"
+          class="bg-white text-lg font-bo text-[#579000] rounded border-r-[50%] px-6 py-3 self-start"
           to="/donate"
-          >DONATE</router-link
+          >DONATE NOW</router-link
         >
-        <router-link
-          to="/about"
-          class="border border-[#579000] text-[#579000] bg-white px-6 py-3 self-start"
-          >Learn More</router-link
-        >
+         
       </div>
     </div>
   </main>
 
+  <section class="px-[1%] md:px-[10%]  py-4 md:py-12 gap-2 flex justify-between items-center">
+    <div class="flex flex-col text-4xl"><span>30+</span> <span> Years of work</span></div>
+    <div class="text-4xl flex flex-col"><span> 8+ </span> <span>Services</span></div>
+    <div class="p-8 text-4xl flex flex-col"><span>20,000+</span> <span> people served</span></div>
+  </section>
+<!-- 
   <section class="w-full px-[6%] grid grid-cols-2 gap-4 py-8">
     <img src="@/assets/2.jpg" alt="" class="w-full max-h-[500px] object-cover" />
     <div class="flex flex-col gap-2 py-8">
@@ -44,11 +46,7 @@
     </div>
   </section>
 
-  <section class="px-[10%] bg-blue-900 text-white py-8 gap-2 flex justify-between items-center">
-    <div class="flex flex-col text-4xl"><span>30+</span> <span> Years of work</span></div>
-    <div class="text-4xl flex flex-col"><span> 8+ </span> <span>Services</span></div>
-    <div class="p-8 text-4xl flex flex-col"><span>20,000+</span> <span> people served</span></div>
-  </section>
+   -->
 
   <section class="w-full py-8 px-4">
     <h1 class="text-2xl font-semibold py-2">Partiners</h1>
@@ -90,3 +88,4 @@
     </div>
   </sections>
 </template>
+
