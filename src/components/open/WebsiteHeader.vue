@@ -3,13 +3,14 @@ import { OPEN_MENUS } from '@/constants/open-navigation'
 </script>
 <template>
   <nav class="flex justify-end bg-[#539000] text-white"><ul class="flex items-center justify-center gap-4 px-4 py-2"><li>English</li> <li>ትግርኛ</li></ul></nav>
-  <header class="w-full flex items-center  z-40 sticky top-0 justify-between px-4 bg-[#539000]s bg-white/100 p-4 text-whidte font-bold">
-    <div class="overflow-hidden">
+  <header class="w-full flex items-center  z-40 sticky top-0 justify-between px-4 bg-[#539000]s bg-white/100 p-4 text-whidte font-semibold">
+    <router-link class="overflow-hidden" to="/">
+
       <img src="@/assets/rest.jpg" alt="" width="40px" height="40px" class="py-2 w-32 h-16" />
-    </div>
+    </router-link>
     <div>
-      <nav class="w-full flex">
-        <ul class="flex space-x-4 px-4 w-full">
+      <nav class="w-full flex text-lg">
+        <ul class="flex space-x-4 px-4 w-full uppercase">
           <li v-for="menu in OPEN_MENUS" :key="menu.name" class="menu-item relative">
             <router-link :to="{ name: menu.name }" exact-active-class="isActive">{{
               menu.label

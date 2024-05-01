@@ -1,8 +1,8 @@
 export const OPEN_MENUS = [
-  {
-    label: 'Home',
-    name: 'home'
-  },
+  // {
+  //   label: 'Home',
+  //   name: 'home'
+  // },
   {
     label: 'About Us',
     name: 'about',
@@ -16,38 +16,52 @@ export const OPEN_MENUS = [
         label: 'Our Staff',
         name: 'staff',
         requiresRoute: true
+      },
+      {
+        label: 'Contact Us',
+        name: 'contact'
       }
     ]
   },
   {
-    label: 'Events',
-    name: 'events',
+    label: 'What We do',
+    name: 'about',
     SUB_MENUS: [
       {
-        label: 'Upcoming Events',
-        name: 'upcoming-events',
-        requiresRoute: false
+        label: 'Our Story',
+        name: 'our-story',
+        requiresRoute: true
       },
       {
-        label: 'Past Events',
-        name: 'past-events',
-        requiresRoute: false
+        label: 'Our Staff',
+        name: 'staff',
+        requiresRoute: true
       },
       {
-        label: 'Event Registration',
-        name: 'event-registration',
-        requiresRoute: false
+        label: 'Contact Us',
+        name: 'contact'
       }
     ]
   },
+  // {
+  //   label: 'Engagement',
+  //   name: 'engagement',
+  //   SUB_MENUS: [
+     
+  //   ]
+  // },
   {
-    label: 'Partnership',
-    name: 'partnership'
-  },
-  {
-    label: 'Engagement',
-    name: 'engagement',
+    label: 'Take Action',
+    name: 'funding',
     SUB_MENUS: [
+      {
+        label: 'Sponsors',
+        name: 'sponsors'
+      },
+      {
+        label: 'Partnership',
+        name: 'partnership'
+      },
       {
         label: 'Volunteers',
         name: 'volunteers'
@@ -55,20 +69,10 @@ export const OPEN_MENUS = [
       {
         label: 'Community Forum',
         name: 'community-forum'
-      }
-    ]
-  },
-  {
-    label: 'Funding',
-    name: 'funding',
-    SUB_MENUS: [
+      },
       {
         label: 'Donate',
         name: 'donate'
-      },
-      {
-        label: 'Sponsors',
-        name: 'sponsors'
       }
     ]
   },
@@ -114,8 +118,26 @@ export const OPEN_MENUS = [
       }
     ]
   },
+
   {
-    label: 'Contact Us',
-    name: 'contact'
+    label: 'Latest',
+    // name: 'events',
+    SUB_MENUS: [
+      {
+        label: 'Upcoming Events',
+        name: 'upcoming-events',
+        requiresRoute: false
+      },
+      {
+        label: 'Past Events',
+        name: 'past-events',
+        requiresRoute: false
+      },
+      {
+        label: 'Event Registration',
+        name: 'event-registration',
+        requiresRoute: false
+      }
+    ]
   }
 ]

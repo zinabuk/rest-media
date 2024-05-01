@@ -76,6 +76,7 @@ import BaseButton from '@/components/base/BaseButton.vue'
         <h3 class="text-lg font-semibold">Rest Finincial relief</h3>
       </div>
     </div>
+    
   </section>
 
   <section class="w-full py-8 px-4">
@@ -103,3 +104,5 @@ import BaseButton from '@/components/base/BaseButton.vue'
     </div>
   </sections>
 </template>
+
+
