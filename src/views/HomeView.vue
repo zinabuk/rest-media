@@ -7,11 +7,11 @@ import BaseButton from '@/components/base/BaseButton.vue'
   <main class="w-full grid grid-cols-12 relative min-h-[calc(100vh_-_80px)] gap-w4">
     <img
       alt="Vue logo"
-      class="logo h-full col-span-7 object-cover w-full"
+      class="logo h-full col-span-8 object-cover w-full"
       src="@/assets/hero.jpg"
     />
     <div
-      class="w-full h-full flex flex-col justify-center gap-4 col-span-5 p-8 bg-[#539000] text-white"
+      class="w-full h-full flex flex-col justify-center gap-4 col-span-4 p-8 bg-[#539000] text-white"
     >
       <h6 class="font-bold text-gray-100">Serving the needy</h6>
       <p class="text-4xl font-bold">Finncial, Agricultural, Health, Education and more Support</p>
@@ -63,9 +63,9 @@ import BaseButton from '@/components/base/BaseButton.vue'
     </div>
   </section>
 
-  <section class="w-full py-8 px-4">
+  <section  class="w-full px-[1%] md:px-[8%] py-8">
     <h1 class="text-2xl font-semibold py-2">Partiners</h1>
-    <div class="w-full grid grid-cols-5 gap-4">
+    <div class="w-full grid grid-cols-8 gap-4 place-content-center items-center justify-center align-middle">
       <div v-for="i in 5" :key="i">
         <img
           src="data:image/png;base64,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"
@@ -79,7 +79,7 @@ import BaseButton from '@/components/base/BaseButton.vue'
     
   </section>
 
-  <section class="w-full py-8 px-4">
+  <!-- <section class="w-full py-8 px-4">
     <h1 class="text-2xl font-semibold py-2">Sponsors</h1>
     <div class="w-full grid grid-cols-7 gap-4">
       <div v-for="i in 7" :key="i">
@@ -90,12 +90,12 @@ import BaseButton from '@/components/base/BaseButton.vue'
         />
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <sections class="w-full px-4 py-8 bg-gray-50">
+  <sections class="w-full px-[1%] md:px-[8%] py-8">
     <h1 class="text-xl font-semibold">In focus: News</h1>
-    <div class="grid grid-cols-5 gap-4">
-      <div v-for="i in 6" :key="i">
+    <div class="grid grid-cols-4 gap-4">
+      <div v-for="i in 4" :key="i">
         <img src="@/assets/5.jpg" alt="" class="w-full min-h-[200px]" />
         <h1 class="text-blue-300">REST Signed an agreement</h1>
         <h4>July 23, 2023</h4>
